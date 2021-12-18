@@ -1,5 +1,8 @@
 ﻿using MelonLoader;
 using NickysMenu.utils;
+using NickysMenu.registers;
+using System;
+
 namespace NickysMenu
 {
     public static class BuildInfo
@@ -16,7 +19,7 @@ namespace NickysMenu
     {
 
         public static MelonPreferences_Category settingsCategory;
-       
+        private RegisterGuis registerUI = new RegisterGuis();
 
         public override void OnApplicationStart() // Runs after Game Initialization.
         {
@@ -35,12 +38,29 @@ namespace NickysMenu
 
         public override void OnSceneWasInitialized(int buildindex, string sceneName) // Runs when a Scene has Initialized and is passed the Scene's Build Index and Name.
         {
-           
+            // trys to register gui layout to vrc
+            try
+            {
+                registerUI.RegisterGuiLayout();
+            }
+            catch (Exception e)
+            {
+                logger.error(e.ToString());
+            }
         }
 
         public override void OnUpdate() // Runs once per frame.
         {
-           
+
+            // trys to register vrc button actions 
+            try
+            {
+                registerUI.RegisterGuiActions();
+            } 
+            catch(Exception e)
+            {
+                logger.error(e.ToString());
+            }
         }
 
         public override void OnFixedUpdate() // Can run multiple times per frame. Mostly used for Physics.
