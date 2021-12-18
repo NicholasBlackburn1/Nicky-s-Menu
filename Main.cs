@@ -24,6 +24,9 @@ namespace NickysMenu
         public override void OnApplicationStart() // Runs after Game Initialization.
         {
             logger.warning("Starting up " +$"{BuildInfo.Name}"+".....");
+
+
+            logger.ok("Successfully started" + $"{BuildInfo.Name}" + ".....");
         }
 
         public override void OnApplicationLateStart() // Runs after OnApplicationStart.
