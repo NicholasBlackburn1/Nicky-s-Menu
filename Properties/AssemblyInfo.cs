@@ -1,15 +1,15 @@
 ﻿using System.Reflection;
 using MelonLoader;
 
-[assembly: AssemblyTitle(TestMod.BuildInfo.Description)]
-[assembly: AssemblyDescription(TestMod.BuildInfo.Description)]
-[assembly: AssemblyCompany(TestMod.BuildInfo.Company)]
-[assembly: AssemblyProduct(TestMod.BuildInfo.Name)]
-[assembly: AssemblyCopyright("Created by " + TestMod.BuildInfo.Author)]
-[assembly: AssemblyTrademark(TestMod.BuildInfo.Company)]
-[assembly: AssemblyVersion(TestMod.BuildInfo.Version)]
-[assembly: AssemblyFileVersion(TestMod.BuildInfo.Version)]
-[assembly: MelonInfo(typeof(TestMod.TestMod), TestMod.BuildInfo.Name, TestMod.BuildInfo.Version, TestMod.BuildInfo.Author, TestMod.BuildInfo.DownloadLink)]
+[assembly: AssemblyTitle(NickysMenu.BuildInfo.Description)]
+[assembly: AssemblyDescription(NickysMenu.BuildInfo.Description)]
+[assembly: AssemblyCompany(NickysMenu.BuildInfo.Company)]
+[assembly: AssemblyProduct(NickysMenu.BuildInfo.Name)]
+[assembly: AssemblyCopyright("Created by " + NickysMenu.BuildInfo.Author)]
+[assembly: AssemblyTrademark(NickysMenu.BuildInfo.Company)]
+[assembly: AssemblyVersion(NickysMenu.BuildInfo.Version)]
+[assembly: AssemblyFileVersion(NickysMenu.BuildInfo.Version)]
+[assembly: MelonInfo(typeof(NickysMenu.NickysMenu), NickysMenu.BuildInfo.Name, NickysMenu.BuildInfo.Version, NickysMenu.BuildInfo.Author, NickysMenu.BuildInfo.DownloadLink)]
 [assembly: MelonColor()]
 
 // Create and Setup a MelonGame Attribute to mark a Melon as Universal or Compatible with specific Games.
