@@ -4,10 +4,10 @@ namespace TestMod
 {
     public static class BuildInfo
     {
-        public const string Name = "TestMod"; // Name of the Mod.  (MUST BE SET)
-        public const string Description = "Mod for Testing"; // Description for the Mod.  (Set as null if none)
-        public const string Author = "TestAuthor"; // Author of the Mod.  (MUST BE SET)
-        public const string Company = null; // Company that made the Mod.  (Set as null if none)
+        public const string Name = "Nicky's Mod Menu"; // Name of the Mod.  (MUST BE SET)
+        public const string Description = "A mod That will Allow you to Mod vrc to your harts desire"; // Description for the Mod.  (Set as null if none)
+        public const string Author = "Nicky Blackburn"; // Author of the Mod.  (MUST BE SET)
+        public const string Company = "Blackburn Software"; // Company that made the Mod.  (Set as null if none)
         public const string Version = "1.0.0"; // Version of the Mod.  (MUST BE SET)
         public const string DownloadLink = null; // Download Link for the Mod.  (Set as null if none)
     }
@@ -16,7 +16,7 @@ namespace TestMod
     {
         public override void OnApplicationStart() // Runs after Game Initialization.
         {
-            MelonLogger.Msg("OnApplicationStart");
+            MelonLogger.Msg("");
         }
 
         public override void OnApplicationLateStart() // Runs after OnApplicationStart.
