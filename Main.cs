@@ -15,7 +15,9 @@ namespace NickysMenu
     public class NickysMenu : MelonMod
     {
 
-        
+        public static MelonPreferences_Category settingsCategory;
+       
+
         public override void OnApplicationStart() // Runs after Game Initialization.
         {
             logger.warning("Starting up " +$"{BuildInfo.Name}"+".....");
